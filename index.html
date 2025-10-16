@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii 3D Модели Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="kawaii-background">
+        <div class="floating-heart">♥</div>
+        <div class="floating-star">★</div>
+        <div class="floating-cloud">☁</div>
+    </div>
+    
+    <header>
+        <div class="header-content">
+            <h1>Kawaii 3D Модели Store <span class="kawaii-face">(´｡• ω •｡`)</span></h1>
+            <p class="subtitle">Самые милые 3D модели для ваших проектов! ☆ ～('▽^人)</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="catalog">
+            <!-- Карточки товаров будут добавляться с помощью JavaScript -->
+        </main>
+
+        <aside class="cart">
+            <div class="cart-header">
+                <h2>Моя корзиночка <span class="cart-icon">🛒</span></h2>
+                <div class="cute-bunny">🐇</div>
+            </div>
+            <div class="cart-items">
+                <!-- Товары в корзине будут добавляться с помощью JavaScript -->
+                <div class="empty-cart">
+                    <div class="sad-face">(´;ω;｀)</div>
+                    <p>Ваша корзиночка пустая</p>
+                </div>
+            </div>
+            
+            <div class="promo-section">
+                <h3>Волшебный промокодик ✨</h3>
+                <div class="promo-input">
+                    <input type="text" placeholder="Введите промокод..." id="promo-code">
+                    <button class="apply-promo kawaii-button" id="apply-promo">Применить!</button>
+                </div>
+            </div>
+            
+            <div class="cart-total">
+                <div class="total-line">
+                    <span>Сумма:</span>
+                    <span id="subtotal">0 руб.</span>
+                </div>
+                <div class="total-line discount">
+                    <span>Скидочка:</span>
+                    <span id="discount">0 руб.</span>
+                </div>
+                <div class="total-line final-total">
+                    <span>Итого:</span>
+                    <span id="total">0 руб.</span>
+                </div>
+            </div>
+            
+            <button class="checkout-btn kawaii-button">Оформить заказик! 🎀</button>
+        </aside>
+    </div>
+
+    <div class="container">
+        <section class="add-product-form">
+            <h2>Добавить новый товарик <span class="sparkles">✨</span></h2>
+            <form id="new-product-form">
+                <div class="form-group">
+                    <label for="product-title">Название товара</label>
+                    <input type="text" id="product-title" required class="kawaii-input">
+                </div>
+                <div class="form-group">
+                    <label for="product-description">Описание</label>
+                    <textarea id="product-description" required class="kawaii-input"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Цена (руб.)</label>
+                    <input type="number" id="product-price" min="0" step="0.01" required class="kawaii-input">
+                </div>
+                <div class="form-group">
+                    <label for="product-image">URL изображения</label>
+                    <input type="url" id="product-image" placeholder="https://example.com/image.jpg" class="kawaii-input">
+                </div>
+                <button type="submit" class="submit-btn kawaii-button">Добавить товарик! 🌸</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>Сделано с любовью и заботой! 💖 (◕‿◕✿)</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
